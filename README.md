@@ -1,4 +1,6 @@
-[Menudrivenofallbuiltinfunctionofdatastructure2.py](https://github.com/user-attachments/files/26333607/Menudrivenofallbuiltinfunctionofdatastructure2.py)[Menudrivenofallbuiltinfunctionofdatastructure.py](https://github.com/user-attachments/files/26333606/Menudrivenofallbuiltinfunctionofdatastructure.py)
+# Menu Driven Of all Data structure built in functions
+
+// Main file[MainMenuDrivenfile.py](https://github.com/user-attachments/files/26333670/MainMenuDrivenfile.py)
 from Menudrivenofallbuiltinfunctionofdatastructure2 import listbuiltin, dictbuiltin, tuplebuiltin, setbuiltin, stringbuiltin
 
 print("Menu driven of all Data structure built in function")
@@ -14,7 +16,52 @@ while True:
 
     try:
         choice = int(input("Enter your choice: "))
-        if choice not in[1, 2, 3, 4, 5, 6]:[Uploading# list bulit in functions
+        if choice not in[1, 2, 3, 4, 5, 6]:
+            print("Enter the number btw 1 to 6")
+            continue
+    except ValueError:
+        print("Enter only integer numbers")
+        continue
+
+    if(choice == 1):
+        print("Calling list function..")
+        listbuiltin()
+        input("Press Enter to Continue..")
+
+    elif(choice == 2):
+        print("Calling dict function")
+        dictbuiltin()
+        input("Press Enter to Continue..")
+
+    elif(choice == 3):
+        print("Calling tuple function....")
+        tuplebuiltin()
+        input("Press Enter to Continue..")
+
+    elif(choice == 4):
+        print("Calling Set function")
+        setbuiltin()
+        input("Press Enter to Continue..")
+
+    elif(choice == 5):
+        print("Calling String Function")
+        stringbuiltin()
+        input("Press Enter to Continue..")
+
+    elif(choice == 6):
+        print("Exiting...")
+        break
+
+    else:
+        print("Invalid number or choice")
+
+
+
+// function file 
+
+
+[Menudrivenofallbuiltinfunctionofdatastructure2.py](https://github.com/user-attachments/files/26333676/Menudrivenofallbuiltinfunctionofdatastructure2.py)
+# list bulit in functions
 def listbuiltin():
     while True:
         print("Select a number to which built in function you want to see")
@@ -332,42 +379,3 @@ def stringbuiltin():
 
         else:
             print("Enter the correct number")
- Menudrivenofallbuiltinfunctionofdatastructure2.py…]()
-
-            print("Enter the number btw 1 to 6")
-            continue
-    except ValueError:
-        print("Enter only integer numbers")
-        continue
-
-    if(choice == 1):
-        print("Calling list function..")
-        listbuiltin()
-        input("Press Enter to Continue..")
-
-    elif(choice == 2):
-        print("Calling dict function")
-        dictbuiltin()
-        input("Press Enter to Continue..")
-
-    elif(choice == 3):
-        print("Calling tuple function....")
-        tuplebuiltin()
-        input("Press Enter to Continue..")
-
-    elif(choice == 4):
-        print("Calling Set function")
-        setbuiltin()
-        input("Press Enter to Continue..")
-
-    elif(choice == 5):
-        print("Calling String Function")
-        stringbuiltin()
-        input("Press Enter to Continue..")
-
-    elif(choice == 6):
-        print("Exiting...")
-        break
-
-    else:
-        print("Invalid number or choice")
